@@ -1,9 +1,0 @@
-document.write('<!--*\n');
-document.write('var aolAdId=\"2188460\";\n');
-document.write('var aolSize=\"728|90\";\n');
-document.write('var aolFormat=\"3rd Party Rich Media Redirect\";\n');
-document.write('*-->\n');
-document.write('<scr'+'ipt language=\'JavaScript1.1\' SRC=\"https:\/\/ad.doubleclick.net\/ddm\/adj\/N8667.272756.AOL-ADVERTISING\/B9293615.126236602;sz=728x90;click=http://imp.bid.ace.advertising.com\/click\/site=917893\/mnum=2188460\/cstr=987221=_56fd51b7_2402262785_917893*2188460*81*0_1_\/xsxdata=$XSXDATA\/imptid=AS405400a779d94c5abde427f5f789cc76\/bnum=987221\/optn=64?trg=;ord=2402262785;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?\">\n');
-document.write('<\/SCRIPT>\n');
-document.write('<scr'+'ipt src=\"https:\/\/cdn.doubleverify.com\/dvtp_src.js?ctx=2181807&cmp=2239070&sid=917893&plc=2188460&num=&adid=&advid=1682804&adsrv=48&region=30&btreg=2188460&btadsrv=advertising&crt=&crtname=&chnl=&unit=&pid=&uid=&dvtagver=6.1.src&DVP_SEGMENT=81&DVP_CAMPAIGNID=265373\" type=\"text\/javascript\"><\/script>\n');
-document.write("<scr"+"ipt src='http://js.moatads.com/advertisingdotcom370674952587/moatad.js#moatClientLevel1=2188460&moatClientLevel2=265373&zMoatMediaWidth=728&zMoatMediaHeight=90&zMoatSegmentID=81&zMoatImpressionID=AS405400a779d94c5abde427f5f789cc76&moatClientSlicer1=917893&moatClientSlicer2=0&zMoatSiteDomain=None&zMoatDevice=personalcomputer' type='text/javascript'></scr"+"ipt>");
