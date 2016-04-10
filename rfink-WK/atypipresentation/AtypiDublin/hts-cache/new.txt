@@ -1,0 +1,3 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+18:47:24	22245/22245	---MCZ	200	added ('OK')	text/html	date:Wed,%2030%20Mar%202016%2022:47:23%20GMT	https://web.archive.org/web/20100912163120/http:/www.atypi.org/03_Dublin/40_timetables/preface/view_presentation_html?presentid=735	C:/Users/Richard/Documents/GitHub/richardfink.github.io/rfink-WK/atypipresentation/AtypiDublin/web.archive.org/web/20100912163120/http_/www.atypi.org/03_Dublin/40_timetables/preface/view_presentation_html89f2.html	(from )
+18:47:25	101/101	---M--	200	added ('OK')	text/plain	etag:W/%22101-1449087168000%22	https://web.archive.org/robots.txt		(from )

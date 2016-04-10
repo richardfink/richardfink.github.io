@@ -1,0 +1,451 @@
+/*
+File:            custom.css
+Description:    Custom styles for Thesis
+
+BASIC USAGE:
+
+If you have enabled the custom stylesheet in the Thesis options panel, the <body> tag
+will be appended with the "custom" class, like so: <body class="custom">. You can use
+the "custom" class to override *any* CSS declarations contained in the style.css file.
+
+For example, if you wish to change the default link color to green, you would add the
+following declarations to this file:
+
+.custom a, .custom a:visited { color: #090; }    <--- This makes links green
+.custom a:hover { color: #00f; }    <--- This makes links blue when you mouse over them
+
+WHY THIS WORKS:
+
+By using the "custom" class, you are creating more specific CSS declarations for HTML
+elements. CSS styling is applied through rules of specificity, and because declarations
+prepended with .custom are more specific, they get applied when the page is rendered!
+
+More information about styling your Thesis installation using this file can be found
+in the User's Guide:
+http://diythemes.com/thesis/rtfm/customizing-thesis-with-customcss/
+
+Background*/
+
+
+@font-face{
+font-family:'chunky';
+src:url('/fonts/chunk_typeRW.eot');
+src:url('/fonts/chunk_typeRW.eot?#iefix')format('embedded-opentype'),url('/fonts/chunk_typeRW.woff')format('woff'),url('/fonts/chunk_typeRW.ttf')format('truetype');
+font-weight:normal;font-style:normal;
+}
+
+@font-face{
+font-family:'titler';
+src:url('/fontface/posthaste/posthaste.eot');
+src:url('/fontface/posthaste/posthaste.eot?#iefix')format('embedded-opentype'),url('/fontface/posthaste/posthaste.woff')format('woff'),url('/fontface/posthaste/posthaste.ttf')format('truetype');
+font-style:normal;
+font-style:normal;
+}
+@font-face{
+font-family:'headcase';
+src:url('/fontface/headcase/headcase.eot');
+src:url('/fontface/headcase/headcase.eot?#iefix')format('embedded-opentype'),url('/fontface/headcase/headcase.woff')format('woff'),url('/fontface/headcase/headcase.ttf')format('truetype');
+font-style:normal;
+font-style:normal;
+}
+@font-face {
+	font-family: 'eloq';
+src:url('/fontface/eloq/eloq-reg.eot');
+src:url('/fontface/eloq/eloq-reg.eot?#iefix')format('embedded-opentype'),url('/fontface/eloq/eloq-reg.woff')format('woff'),url('/fontface/eloq/eloq-reg.ttf')format('truetype');
+font-style:normal;
+font-weight:normal;
+}
+@font-face {
+	font-family: 'eloq';
+src:url('/fontface/eloq/eloq-italic.eot');
+src:url('/fontface/eloq/eloq-italic.eot?#iefix')format('embedded-opentype'),url('/fontface/eloq/eloq-italic.woff')format('woff'),url('/fontface/eloq/eloq-italic.ttf')format('truetype');
+font-style:italic;
+font-weight:normal;
+}
+@font-face {
+font-family: 'eloq';
+src:url('/fontface/eloq/eloq-demibold.eot');
+src:url('/fontface/eloq/eloq-demibold.eot?#iefix')format('embedded-opentype'),url('/fontface/eloq/eloq-demibold.woff')format('woff'),url('/fontface/eloq/eloq-demibold.ttf')format('truetype');
+font-style:normal;
+font-weight:bold;
+}
+@font-face{
+font-family:'lincoln';
+src:url('/fonts/innovation.eot');
+src:url('/fonts/innovation.eot?#iefix')format('embedded-opentype'),url('/fonts/innovation.woff')format('woff'),url('/fonts/innovation.ttf')format('truetype');
+font-style:normal;
+font-style:normal;
+}
+@font-face{
+font-family:'walt';
+src:url('/fonts/travelogue.eot');
+src:url('/fonts/travelogue.eot?#iefix')format('embedded-opentype'),url('/fonts/travelogue.woff')format('woff'),url('/fonts/travelogue.ttf')format('truetype');
+font-style:normal;
+font-style:normal;
+}
+@font-face{
+font-family:'puffbudlight';
+src:url('/fonts/PuffbuddyLt-HTMLBasics+.eot');
+src:url('/fonts/PuffbuddyLt-HTMLBasics+.eot?#iefix')format('embedded-opentype'),url('/fonts/PuffbuddyLt-HTMLBasics+.woff')format('woff'),url('/fonts/PuffbuddyLt-HTMLBasics+.ttf')format('truetype');
+font-style:normal;
+font-style:normal;
+}
+/*
+@font-face {
+	font-family: 'eloq';
+	src:url('http://:/')format('NO-IE-404'),url('/fontface/eloq/eloq-reg.woff')format('woff'),url('/fontface/eloq/eloq-reg.ttf')format('truetype'),url('/fontface/eloq/eloq-reg.svgz#webfontzspl8X85')format('svg'), url('/fontface/eloq/eloq-reg.svg#webfontzspl8X85')format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'eloq';
+	src:url('http://:/')format('NO-IE-404'),url('/fontface/eloq/eloq-demibold.woff')format('woff'),url('/fontface/eloq/eloq-demibold.ttf')format('truetype'), url('/fontface/eloq/eloq-demibold.svgz#webfontUPcIBFoN')format('svg'), url('/fontface/eloq/eloq-demibold.svg#webfontUPcIBFoN')format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'eloq';
+	src:url('http://:/')format('NO-IE-404'),url('/fontface/eloq/eloq-italic.woff') format('woff'),url('/fontface/eloq/eloq-italic.ttf') format('truetype'),url('/fontface/eloq/eloq-italic.svgz#webfontE2xRx7wa')format('svg'), url('/fontface/eloq/eloq-italic.svg#webfontE2xRx7wa')format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'headcase';
+	src:url('http://:/')format('NO-IE-404'),url('/fontface/headcase/headcase.woff')format('woff'),url('/fontface/headcase/headcase.ttf')format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'titler';
+	src:url('http://:/')format('NO-IE-404'),url('/fontface/posthaste/posthaste.woff')format('woff'),url('/fontface/posthaste/posthaste.ttf')format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+*/
+BODY.custom
+{
+	/*background: #FCF3D6 url(../lib/images/rw-bg.jpg) repeat-x;*/
+}
+#header #logo {
+font-size: 3.6em;
+font-size:34px;
+line-height: 1.167em;
+
+}
+#header #tagline {
+font-size: 1.4em;
+font-size:16px;
+font-family:chunky,'segoe UI', arial, sans-serif;
+line-height: 1.429em;
+word-spacing:-2px;
+}
+/*Header*/
+.custom #container #page{
+padding-top:0;
+}
+.custom #container #page #header
+{
+	background: #333333;
+	margin-right: -23px;
+	margin-left: -23px;
+	padding-left: 32px;
+	padding-right: 32px;
+	border-top: 20px solid #F6AA2E;
+	margin-bottom:21px;
+}
+.custom #header #logo A
+{
+	font-family: chunky, georgia, serif;
+	word-spacing: -8px;
+	color: #FFFFFF;
+}
+#header P#logo A .k1
+{
+	letter-spacing: -0.07em;
+}
+#header P#logo A .k2
+{
+	letter-spacing: -0.09em;
+}
+.custom .headline_area H2, .custom .headline_area H1
+{
+	font-weight: bold;
+	font-family: arial;
+	letter-spacing: -1px;
+	font-size: 24px;
+	line-height: 1;
+	margin-bottom: 15px;
+	margin-bottom:0px;
+}
+.custom .headline_area h2.entry-title {
+font-size:24px;
+font-family:'titler', arial, sans-serif;
+font-size:30px;
+font-weight:normal;
+font-style:normal;
+/*margin-top:20px;*/
+margin-bottom:-10px;
+}
+.custom .headline_area h1.entry-title {
+font-family:'titler', arial, sans-serif;
+font-size:30px;
+font-weight:normal;
+font-style:normal;
+/*margin-top:20px;*/
+margin-top:10px;
+margin-bottom:-10px;
+}
+.custom #content .headline_area .headline_meta
+{
+	color: #531;
+}
+.custom #header #tagline
+{
+	color: #DADADA;
+}
+.custom #page .menu .rss A
+{
+	margin-bottom: -25px;
+	color: #FFFFFF !important;
+}
+.custom #container #page ul.menu{
+display:none;
+margin-top: -24px;
+margin-right: -21px;
+margin-left: -21px;
+padding-left: 32px;
+padding-right: 32px;
+}
+/*Content*/
+.custom #container #content_box #content
+{
+	border-right: 2px solid #EBE6D3 !important;
+	margin-left: -1px;
+}
+.custom .post_box, .custom .teasers_box
+{
+padding-top:.5em;
+	border-bottom: 1px solid #EAE5D2;
+	/*border-top: 1px solid #EAE5D2;*/
+}
+.custom #content .prev_next
+{
+	border-top: 1px solid #E9E4D1;
+}
+/*Sidebar*/
+.custom #sidebars .widget H3
+{
+	border-bottom: 2px solid #ECE7D4;
+	padding-bottom: 7px;
+	margin-bottom: 30px;
+	/*rf
+	font-family:chunky, serif;
+	text-transform:uppercase;
+	font-size: 20px;*/ /*not working in Chrome*/
+}
+/*Comments*/
+.custom #content #comments .comment-author-richard-fink
+{
+	background: #FDF7E1;
+}
+.custom #container #comments #commentform #acp-preview
+{
+	cursor: pointer;
+	width: 100px;
+	position: relative;
+	top: -28px;
+	left: 90px;
+	font-size: 13px;
+	height: 25px;
+	background-color: #FFFFFF;
+}
+.custom #container #comments #commentform #acp-preview:hover
+{
+	color: #D39730;
+}
+/*Footer*/
+.custom #page #footer
+{
+	border-top: 2px solid #EAE5D2;
+}
+/*rfink*/
+.custom #container #content_box #content .format_text p{
+margin-bottom: 2px;
+margin-top:0px;
+}
+/*
+.custom #container #content_box #content .format_text p {
+margin-bottom:2px;
+margin-top:-22px;
+}
+.format_text p {
+margin-bottom:1.571em;
+}
+*/
+/*
+.custom #content .headline_area .entry-title .headline_meta abbr.published {
+	color: #531;
+	background: #DCB46B;
+	position: relative;
+	left: -147px;
+	padding: 10px;
+	font-size: 18px;
+	color: #FFF;
+	}
+	*/
+	div.headline_meta {
+	text-align:right;
+	}
+.custom .headline_meta span, .headline_meta abbr {
+/*position: absolute;*/
+/*position:relative;*/
+	left: -92px;
+	/*right:-65px;*/
+	top:4px;
+	font-size: 14px;
+	display:inline-block;
+	height:20px; /*FF wants this ???*/
+	font-family:chunky,arial, sans-serif;
+	background: #DCB46B;
+	/*text-align:center;*/
+	color: #531;
+		padding:0 2px 0 2px;
+	/*padding-top:2px;
+	padding-bottom:2px;
+
+	padding-right:2px;*/
+	margin-bottom:0px;
+	line-height:21px;
+	text-transform:uppercase;
+}
+.custom .headline_meta p, .headline_meta abbr {
+/*position: absolute;*/
+/*position:relative;*/
+	left: 540px;
+	left:50px;
+	margin-left:500px;
+	/*right:-65px;*/
+	top:-42px;
+	top:-26px;
+	font-size: 14px;
+	display:inline-block;
+	height:-40px; /*FF wants this ???*/
+	font-family:chunky,arial, sans-serif;
+	/*background: #DCB46B;*/
+	/*text-align:center;*/
+	color: #531;
+		padding:0 2px 0 2px;
+	/*padding-top:2px;
+	padding-bottom:2px;
+
+	padding-right:2px;*/
+	margin-bottom:0px;
+	line-height:21px;
+	text-transform:uppercase;
+
+}
+.custom .headline_meta{
+	word-spacing:-6px;
+	word-spacing:-.2em;
+}
+.custom div.headline_area {
+margin-bottom:2.2em;
+margin-bottom:0px;
+}
+.custom .format_text .entry-content{
+/*margin-bottom:20px;*/
+}
+.custom div.top h2.entry-title {
+/*margin-bottom:20px;*/
+margin-top:0px;
+}
+.custom h2.entry-title {
+/*margin-bottom:20px;*/
+margin-top:10px;
+}
+.format_text {
+font-size: 16px;
+line-height: 22px;
+}
+	
+/*.format_text p { margin-bottom: 1.571em; }*/px 0 2px;
+	/*padding-top:2px;
+	padding-bottom:2px;
+
+	padding-right:2px;*/
+	margin-bottom:0px;
+	line-height:21px;
+	text-transform:uppercase;
+}
+.custom .headline_meta p, .headline_meta abbr {
+/*position: absolute;*/
+position:relative;
+	left: 540px;
+	/*right:-65px;*/
+	top:-42px;
+	top:-300px;
+	font-size: 14px;
+	display:inline-block;
+	height:-40px; /*FF wants this ???*/
+	font-family:chunky,arial, sans-serif;
+	/*background: #DCB46B;*/
+	/*text-align:center;*/
+	color: #531;
+	color:red;
+		padding:0 2px 0 2px;
+	/*padding-top:2px;
+	padding-bottom:2px;
+
+	padding-right:2px;*/
+	margin-bottom:0px;
+	line-height:21px;
+	text-transform:uppercase;
+
+}
+
+.custom .pub.headline_meta .published abbr{
+margin-top:-200px;
+color:red;
+}
+.custom .headline_meta{
+	word-spacing:-6px;
+	word-spacing:-.2em;
+}
+.custom div.headline_area {
+margin-bottom:2.2em;
+margin-bottom:0px;
+}
+.custom .format_text .entry-content{
+/*margin-bottom:20px;*/
+}
+.custom div.top h2.entry-title {
+/*margin-bottom:20px;*/
+margin-top:0px;
+}
+.custom div.headline_area h2.entry-title {
+/*margin-bottom:20px;*/
+margin-top:10px;
+}
+.custom h1.entry-title {
+font-family:'titler';
+font-size:32px;
+font-weight:normal;
+font-style:normal;
+/*margin-bottom:20px;*/
+margin-top:10px;
+}
+/*.format_text {font-size: 16px;line-height: 22px;} for georgia - larger x height*/
+body { font-family: 'eloq',Georgia, "Times New Roman", Times, serif; }
+/*.format_text { font-size: 1.4em; line-height: 1.571em; }*/
+.custom .format_text { font-size: 19px; line-height: 25px; }
+/*.format_text A{text-decoration: underline;}*/
+.custom .format_text A{text-decoration: underline;font-weight:bold;}
+/*.format_text p { margin-bottom: 1.571em; }*/
+/*.custom .format_text  h2{1.83em 0px 0.61em}*/
+.custom .format_text  h2{margin:12px 0px 6px;font-size:28px;font-weight:normal;font-family:arial, sans-serif;}
+.custom .format_text h3{margin:10px 0px 4px;font-size:24px;font-weight:normal;font-family:'headcase',arial;}
+/*.headline_area h1, .headline_area h2 { font-size: 2.2em; line-height: 1.364em; }
+.format_text h2, .format_text h3 { font-size: 1.286em; line-height: 1.222em; margin: 1.833em 0 0.611em 0; }
+.format_text h4 { font-size: 1em; }
+.format_text h5 { font-size: 0.786em; }
+.format_text h6 { font-size: 0.786em; }*/
